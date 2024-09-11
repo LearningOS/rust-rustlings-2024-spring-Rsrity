@@ -5,10 +5,11 @@
 // Execute `rustlings hint primitive_types3` or use the `hint` watch subcommand
 // for a hint.
 
-// I AM NOT DONE
+
 
 fn main() {
-    let a = ???
+	/* 初始化一个长度为100的i32数组，并将其全部元素初始化为0 */
+    let a: [i32; 100] = [0; 100];
 
     if a.len() >= 100 {
         println!("Wow, that's a big array!");

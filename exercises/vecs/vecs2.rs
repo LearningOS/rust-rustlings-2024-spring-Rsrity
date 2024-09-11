@@ -10,10 +10,11 @@
 // I AM NOT DONE
 
 fn vec_loop(mut v: Vec<i32>) -> Vec<i32> {
+	/* v.iter_mut() 是一个方法调用，它返回v向量中元素的迭代器，这些迭代器允许对向量中的元素进行可变引用。 */
     for element in v.iter_mut() {
         // TODO: Fill this up so that each element in the Vec `v` is
         // multiplied by 2.
-        ???
+        *element *= 2;
     }
 
     // At this point, `v` should be equal to [4, 8, 12, 16, 20].
@@ -21,10 +22,11 @@ fn vec_loop(mut v: Vec<i32>) -> Vec<i32> {
 }
 
 fn vec_map(v: &Vec<i32>) -> Vec<i32> {
+	/* v.iter()返回v向量中元素的迭代器，这些迭代器允许对向量中的元素进行不可变引用。 */
     v.iter().map(|element| {
         // TODO: Do the same thing as above - but instead of mutating the
         // Vec, you can just return the new number!
-        ???
+        element * 2
     }).collect()
 }
 
