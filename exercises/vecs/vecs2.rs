@@ -7,7 +7,7 @@
 //
 // Execute `rustlings hint vecs2` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
+
 
 fn vec_loop(mut v: Vec<i32>) -> Vec<i32> {
 	/* v.iter_mut() 是一个方法调用，它返回v向量中元素的迭代器，这些迭代器允许对向量中的元素进行可变引用。 */
